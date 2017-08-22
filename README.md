@@ -2,4 +2,5 @@
 
 Description:
 
-Write some C functions and programs to get familiar with the language.
+- Write some C functions and programs to get familiar with the language.
+- Get practice using github
