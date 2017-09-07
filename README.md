@@ -31,6 +31,8 @@ If you are running on a linux or mac,  you can use ssh through the terminal. If 
 
 ssh yourname@login.ccs.neu.edu (where yourname is your ccis account)
 
+You will then be prompted to enter a password (Note the password characters are not echoed back as you type).
+
 # Creating a github account:
 
 GitHub(www.github.com) is an online webpage that hosts git respositories. GitHub.com is a place that will host your code online where you can make incremental changes to. Your code will be saved online, and you can then download the repository from anywhere!
@@ -45,18 +47,39 @@ Practice using git (the version control program that uploads your code to github
 
 https://try.github.io/levels/1/challenges/1
 
+# Get practice with the commandline.
 
+If you are not currently experienced with the terminal, you should get some practice.
+
+Here are some commands to run in the terminal.
 
 Tasks:
-
-    Run the command "less /course/cs3650/help/unix-help.txt" and read the help file. The "q" key quits.
-    Run "mkdir -p ~/cs3650/hw01".
-    Run "ps -ef" and redirect the output to a file in your new hw01 directory.
-    Create a gzipped tarball of the hw01 directory (containing exactly the hw01 directory and the ps output file).
-    Copy that tarball to your local machine. (Linux: scp command; Mac: Cyberduck?; Windows: WinSCP)
-    Submit the tarball here.
-    Finally, run the "touch" command to create a file in /course/cs3650sp17/hw01 named [your-user-name].txt 
-
-
-
-
+    
+    mkdir cs3650
+    cd cs3650
+    mkdir ps1
+    cd ps1
+    man git
+    
+    Next we will clone the repo from git onto the server. This is where you can work from.
+    
+    git clone "https://github.com/Fall17CS3650/Assignment1-your_user_name_here"
+    
+    Once you have cloned in the repo to the CCIS server, you may then edit this README document with your name.
+    Once you have done so, then commit your changes to the repo.
+    
+Next task:
+    
+    Try some of these commands:
+    ls
+    man ps
+    ps
+    ps -ef
+    
+    You may additionally try other commands.
+    
+    When you are satisfied, pipe the output from your terminal into a text file called "playground.txt".
+    
+    When you have done this, add the "playground.txt" to the repo, and commit your changes.
+    
+    Your assignment will then be graded (I have a neat script that clones all repos for me) from whatever exists on the repo on the 19th just before class starts.
